@@ -1,4 +1,8 @@
-import { Theme, ThemeContext, LOCAL_STORAGE_THEME_KEY } from "./ThemeContext";
+import {
+  Theme,
+  ThemeContext,
+  LOCAL_STORAGE_THEME_KEY,
+} from "../lib/ThemeContext";
 import { useState, useMemo, FC } from "react";
 
 const ThemeProvider: FC = ({ children }) => {
