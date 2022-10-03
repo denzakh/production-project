@@ -4,7 +4,7 @@
 }
 
 .primary {
-    color: var(--primary-color);
+    color: var(--inverted-primary-color);
 }
 
 .secondary {
@@ -12,6 +12,6 @@
 }
 
 .dashed {
-    color: var(--primary-color);
+    color: var(--inverted-primary-color);
     text-decoration-style: dashed;
 }
