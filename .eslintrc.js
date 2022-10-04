@@ -39,7 +39,7 @@ module.exports = {
     "react/jsx-props-no-spreading": "warn",
     "react/react-in-jsx-scope": "off",
     "react/require-default-props": "off",
-    "i18next/no-literal-string": ["error", { markupOnly: true}]
+    "i18next/no-literal-string": ["error", { markupOnly: true, ignoreAttribute: ['to']}]
   },
   globals: {
     __IS_DEV__: true,
