@@ -22,6 +22,7 @@ module.exports = {
     indent: [2, 2],
     "no-shadow": "off",
     "no-underscore-dangle": "off",
+    "@typescript-eslint/no-unused-vars": "error",
     "no-unused-vars": "warn",
     "object-curly-newline": "off",
     quotes: [2, "double", { avoidEscape: true }],
