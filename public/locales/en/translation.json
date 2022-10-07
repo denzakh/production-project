@@ -3,5 +3,8 @@
   "navbar": "Navbar",
   "glavnaya": "Main",
   "o-saite-0": "About",
-  "page404": "Page not found"
+  "page404": "Page not found",
+  "proizoshla-nepredvidennaya-oshibka": "An unexpected error has occurred",
+  "obnovit-stranicu": "reload page",
+  "sdelat-oshibku": "Throw error"
 }
