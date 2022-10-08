@@ -40,9 +40,23 @@ module.exports = {
       "error",
       { markupOnly: true, ignoreAttribute: ["to", "data-testid"] },
     ],
-    "max-len": ["error", { ignoreComments: true }],
+    "max-len": [
+      "error",
+      {
+        ignoreComments: true,
+        ignorePattern: "^import\\s.+\\sfrom\\s.+;$",
+      },
+    ],
   },
   globals: {
     __IS_DEV__: true,
   },
+  overrides: [
+    {
+      files: ["**/src/**/*.test.{ts,tsx}"],
+      rules: {
+        "i18next/no-literal-string": "off",
+      },
+    },
+  ],
 };
