@@ -1,17 +1,15 @@
-.applink {
-  display: inline-block;
-  padding: 10px;
+.AppLink {
+  color: var(--primary-color);
 }
 
 .primary {
-  color: var(--inverted-primary-color);
+  color: var(--primary-color);
 }
 
 .secondary {
   color: var(--inverted-primary-color);
 }
 
-.dashed {
-  color: var(--inverted-primary-color);
-  text-decoration-style: dashed;
+.red {
+  color: red;
 }
