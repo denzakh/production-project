@@ -9,32 +9,29 @@ interface ErrorBoundaryState {
     hasError: boolean;
 }
 
-class ErrorBoundary extends React.Component<
-    ErrorBoundaryProps,
-    ErrorBoundaryState
-> {
+class ErrorBoundary
+    extends React.Component<ErrorBoundaryProps, ErrorBoundaryState> {
     constructor(props: ErrorBoundaryProps) {
         super(props);
         this.state = { hasError: false };
     }
 
-    static getDerivedStateFromError() {
-        // Обновить состояние с тем, чтобы следующий рендер показал запасной UI.
+    static getDerivedStateFromError(error: Error) {
+        // Update state so the next render will show the fallback UI.
         return { hasError: true };
     }
 
     componentDidCatch(error: Error, errorInfo: ErrorInfo) {
-        // Можно также сохранить информацию об ошибке в соответствующую службу журнала ошибок
-        // eslint-disable-next-line
+        // You can also log the error to an error reporting service
         console.log(error, errorInfo);
     }
 
     render() {
-        const { children } = this.props;
         const { hasError } = this.state;
+        const { children } = this.props;
 
         if (hasError) {
-            // Можно отрендерить запасной UI произвольного вида
+            // You can render any custom fallback UI
             return (
                 <Suspense fallback="">
                     <ErrorPage />

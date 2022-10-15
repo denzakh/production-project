@@ -15,5 +15,11 @@ export const BugButton = () => {
         }
     }, [error]);
 
-    return <Button onClick={onThrow}>{t('sdelat-oshibku')}</Button>;
+    return (
+        <Button
+            onClick={onThrow}
+        >
+            {t('throw error')}
+        </Button>
+    );
 };
