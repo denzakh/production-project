@@ -10,7 +10,7 @@ export default (env: BuildEnv) => {
         src: path.resolve(__dirname, 'src'),
     };
 
-    const isAnalyze = Boolean(env.analyze);
+    const isAnalyze = Boolean(env.isAnalyze);
     const mode = env.mode || 'development';
     const PORT = env.port || 3000;
     const isDev = mode === 'development';
