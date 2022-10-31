@@ -10,6 +10,7 @@ import {
     DynamicModuleLoader,
     ReducersList,
 } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
+import { AnyAction } from '@reduxjs/toolkit';
 import { getLoginUsername } from '../../model/selectors/getLoginUsername/getLoginUsername';
 import { getLoginPassword } from '../../model/selectors/getLoginPassword/getLoginPassword';
 import { getLoginIsLoading } from '../../model/selectors/getLoginIsLoading/getLoginIsLoading';
@@ -49,12 +50,8 @@ const LoginForm = memo(({ className }: LoginFormProps) => {
     );
 
     const onLoginClick = useCallback(() => {
-        const loginByUsernameAction = {
-            type: loginByUsername,
-            payload: loginByUsername({ username, password }),
-        };
-
-        dispatch(loginByUsernameAction);
+        // @ts-ignore
+        dispatch(loginByUsername({ username, password }));
     }, [dispatch, password, username]);
 
     return (
