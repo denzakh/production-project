@@ -7,14 +7,16 @@ import { useNavigate } from 'react-router-dom';
 
 interface StoreProviderProps {
     children?: ReactNode;
-    // eslint-disable-next-line no-undef
     initialState?: DeepPartial<StateSchema>;
-    // eslint-disable-next-line no-undef
-    asyncReducers?: DeepPartial<ReducersMapObject<StateSchema>>;
+    asyncReducers?: DeepPartial<ReducersMapObject<StateSchema>>
 }
 
 export const StoreProvider = (props: StoreProviderProps) => {
-    const { children, initialState, asyncReducers } = props;
+    const {
+        children,
+        initialState,
+        asyncReducers,
+    } = props;
 
     const navigate = useNavigate();
 
@@ -24,5 +26,9 @@ export const StoreProvider = (props: StoreProviderProps) => {
         navigate,
     );
 
-    return <Provider store={store}>{children}</Provider>;
+    return (
+        <Provider store={store}>
+            {children}
+        </Provider>
+    );
 };
