@@ -4,7 +4,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import withMock from 'storybook-addon-mock';
 import { AvatarDropdown } from './AvatarDropdown';
 import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator/StoreDecorator';
-import { UserRole } from '@/entities/User/model/consts/userConsts';
+import { UserRole } from '@/entities/User';
 
 export default {
     title: 'features/AvatarDropdown',

@@ -49,7 +49,19 @@ module.exports = {
             'error',
             {
                 markupOnly: true,
-                ignoreAttribute: ['role', 'data-testid', 'to', 'target', 'justify', 'align', 'direction', 'gap', 'as', 'border', 'height'],
+                ignoreAttribute: [
+                    'role',
+                    'data-testid',
+                    'to',
+                    'target',
+                    'justify',
+                    'align',
+                    'direction',
+                    'gap',
+                    'as',
+                    'border',
+                    'height',
+                ],
             },
         ],
         'max-len': ['error', { ignoreComments: true, code: 130 }],
@@ -61,6 +73,7 @@ module.exports = {
         'no-undef': 'off',
         'react/no-array-index-key': 'off',
         'ulbi-tv-plugin/path-checker': 'error',
+        'ulbi-tv-plugin/public-api-imports': ['error', { alias: '@' }],
     },
     globals: {
         __IS_DEV__: true,
