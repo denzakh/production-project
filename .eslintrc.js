@@ -71,9 +71,17 @@ module.exports = {
         'react-hooks/exhaustive-deps': 'error', // Checks effect dependencies,
         'no-param-reassign': 'off',
         'no-undef': 'off',
+        'object-curly-newline': 'off',
         'react/no-array-index-key': 'off',
         'ulbi-tv-plugin/path-checker': 'error',
-        'ulbi-tv-plugin/public-api-imports': ['error', { alias: '@' }],
+        'ulbi-tv-plugin/path-checker': ['error', { alias: '@' }],
+        'ulbi-tv-plugin/public-api-imports': [
+            'error',
+            {
+                alias: '@',
+                testFilesPatterns: ['**/*.test.*', '**/*.story.*', '**/StoreDecorator.tsx'],
+            },
+        ],
     },
     globals: {
         __IS_DEV__: true,
