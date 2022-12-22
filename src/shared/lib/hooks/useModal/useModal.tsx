@@ -5,7 +5,6 @@ import {
     useRef,
     useState,
 } from 'react';
-import { useTheme } from '../useTheme/useTheme';
 
 interface UseModalProps {
     onClose?: () => void;
