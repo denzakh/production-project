@@ -73,8 +73,14 @@ module.exports = {
         'no-undef': 'off',
         'object-curly-newline': 'off',
         'react/no-array-index-key': 'off',
-        'ulbi-tv-plugin/path-checker': 'error',
         'ulbi-tv-plugin/path-checker': ['error', { alias: '@' }],
+        'ulbi-tv-plugin/layer-imports': [
+            'error',
+            {
+                alias: '@',
+                ignoreImportPatterns: ['**/StoreProvider', '**/testing'],
+            },
+        ],
         'ulbi-tv-plugin/public-api-imports': [
             'error',
             {
