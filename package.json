@@ -27,7 +27,8 @@
     "storybook:build": "build-storybook -c ./config/storybook",
     "prepare": "husky install",
     "generate:slice": "node ./scripts/createSlice/index.js",
-    "tssh": "ts-node ./scripts/refactoring/createPublicApiForSharedUi.ts"
+    "tssh": "ts-node ./scripts/refactoring/createPublicApiForSharedUi.ts",
+    "postinstall": "node ./scripts/clear-cache.js"
   },
   "keywords": [],
   "author": "",
