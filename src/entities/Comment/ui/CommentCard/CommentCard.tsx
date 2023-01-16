@@ -50,6 +50,7 @@ export const CommentCard = memo((props: CommentCardProps) => {
             gap="8"
             max
             className={classNames(cls.CommentCard, {}, [className])}
+            data-testid="CommentCard.Content"
         >
             <AppLink
                 to={getRouteProfile(comment.user.id)}
