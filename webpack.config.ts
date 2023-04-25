@@ -24,6 +24,8 @@ export default (env: BuildEnv) => {
         buildLocales: path.resolve(__dirname, 'build', 'locales'),
     };
 
+    console.dir(env);
+
     const mode = env?.mode || 'development';
     const PORT = env?.port || 3000;
     const apiUrl = getApiUrl(mode, env?.apiUrl);
