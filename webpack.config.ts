@@ -24,7 +24,11 @@ export default (env: BuildEnv) => {
         buildLocales: path.resolve(__dirname, 'build', 'locales'),
     };
 
+    console.log('env: ');
     console.dir(env);
+
+    console.log('process.env: ');
+    console.dir(process.env);
 
     const mode = env?.mode || 'development';
     const PORT = env?.port || 3000;
