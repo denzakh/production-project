@@ -107,7 +107,7 @@
         {
             "id": "2",
             "title": "Python news",
-            "subtitle": "Что нового в JS за 2022 год?",
+            "subtitle": "Что нового в Python за 2022 год?",
             "img": "https://office-guru.ru/wp-content/uploads/2021/08/original-1e3a9b0322e85ba64376e6de6a9a0065.jpg",
             "views": 5204,
             "createdAt": "26.02.2022",
@@ -195,7 +195,7 @@
         {
             "id": "6",
             "title": "Java news",
-            "subtitle": "Что нового в JS за 2022 год?",
+            "subtitle": "Что нового в Java за 2022 год?",
             "img": "https://andreyex.ru/wp-content/uploads/2018/05/Kak-ustanovit-Java-s-apt-na-Ubuntu-18.04.jpg",
             "views": 1022,
             "createdAt": "26.02.2022",
@@ -217,7 +217,7 @@
         {
             "id": "7",
             "title": "Ruby news",
-            "subtitle": "Что нового в JS за 2022 год?",
+            "subtitle": "Что нового в Ruby за 2022 год?",
             "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--oqV3akcU--/c_imagga_scale,f_auto,fl_progressive,h_500,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/pgnw91fs7tpxn0wyeqh2.jpg",
             "views": 100,
             "createdAt": "21.02.2022",
@@ -687,7 +687,7 @@
             "username": "admin",
             "password": "123",
             "roles": ["ADMIN"],
-            "avatar": "https://yakutsk.ru/wp-content/uploads/2022/07/12/bystrov_haker.jpeg"
+            "avatar": "https://sinto.pro/upload/medialibrary/f42/hackerman.jpeg"
         },
         {
             "id": "2",
